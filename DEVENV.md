@@ -37,13 +37,13 @@ npm install
 ![settings](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/settings.png)
     2. Navigate to the `Endpoints` page under `ACCESS`
 ![endpoints](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/endpoints.png)
-    3. Copy the URL under `High Performance Content API`
+    1. Copy the URL under `High Performance Content API`
 ![url](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/api-url.png)
 
-6. Once you have that URL copied, create a `.env` file in the root of your project. It should look like this once completed:
+1. Once you have that URL copied, create a `.env` file in the root of your project. It should look like this once completed:
 ![env](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/env.png)
 
-7. Place the following into the file and save:
+1. Place the following into the file and save:
 ```js
 VITE_GRAPHQL_API=[URL YOU COPIED WITHOUT THESE SURROUNDING BRACKETS]
 ```
