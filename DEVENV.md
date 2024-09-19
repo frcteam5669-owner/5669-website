@@ -1,38 +1,61 @@
-# create-svelte
+# Creating a development environment
+In order to develop and maintain the code of this website, there are several steps one must follow to ensure a smooth experience.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Installations
+[NodeJS](https://nodejs.org/en)
+- Download the Node.js runtime from the website above and install it. There shouldn't be many steps involved, and it should be pretty straightforward
 
-## Creating a project
+[VSCode](https://code.visualstudio.com/)
+- Unless you are working on a personal computer, VSCode should already be installed for work on Robot code. Use that version of VSCode if it is available
 
-If you're seeing this, you've probably already done this step. Congrats!
+[GitHub Desktop](https://desktop.github.com/download/)
+- Again, this should be installed already if you have been working on Robot code. Ensure that GitHub desktop is installed and that you are logged in to your personal account. If you are not a part of the FRC-Team-5669-Techmen organization, ask your software officer to invite you.
 
+Once you have ensured all of the above are installed, we can begin setting up a development environment for the website.
+
+## Getting Started
+This repository will not teach you GitHub. For a decent tutorial, see the following: [Learn-Github](https://github.com/FRC-Team-5669-Techmen/Learn-GitHub)
+
+1. Pull this repository from GitHub into GitHub Desktop
+![Pulling Repository](https://github.com/FRC-Team-5669-Techmen/5669-website/static/github-desktop.png)
+
+2. Open the repository in VSCode. It should look something like the following when complete:
+![vscode](https://github.com/FRC-Team-5669-Techmen/5669-website/static/vscode.png)
+
+3. Open VSCode's terminal:
+![terminal](https://github.com/FRC-Team-5669-Techmen/5669-website/static/terminal.png)
+
+4. In the terminal, run the following command:
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# install all dependencies
+npm install
 ```
 
-## Developing
+5. Lastly, you need to add an environment variable that connects the website to the content backend. To do this, have your software officer give you the login information for [Hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/HOSTING.md) 
+    1. Once logged in to Hygraph, open the `Website` project and navigate to the settings page.
+![website-hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/static/hygraph-website-page.png)
+![settings](https://github.com/FRC-Team-5669-Techmen/5669-website/static/settings.png)
+    2. Navigate to the `Endpoints` page under `ACCESS`
+![endpoints](https://github.com/FRC-Team-5669-Techmen/5669-website/static/endpoints.png)
+    3. Copy the URL under `High Performance Content API`
+![url](https://github.com/FRC-Team-5669-Techmen/5669-website/static/api-url.png)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+6. Once you have that URL copied, create a `.env` file in the root of your project. It should look like this once completed:
+![env](https://github.com/FRC-Team-5669-Techmen/5669-website/static/env.png)
+
+7. Place the following into the file and save:
+```js
+VITE_GRAPHQL_API=[URL YOU COPIED WITHOUT THESE SURROUNDING BRACKETS]
+```
+
+1. Assuming everything went correctly, which it hopefully did, run the following in the terminal. It should spit out a few lines of code, but eventually tell you a URL you can navigate to to see the website!
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Deployments
+All of our deployments are handled by [Vercel](https://github.com/FRC-Team-5669-Techmen/5669-website/HOSTING.md).
+To update the live website, simply push a commit to the repository, and assuming everything builds correctly, it will be propagated globally within minutes.
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Happy coding!
