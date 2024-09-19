@@ -17,13 +17,13 @@ Once you have ensured all of the above are installed, we can begin setting up a 
 This repository will not teach you GitHub. For a decent tutorial, see the following: [Learn-Github](https://github.com/FRC-Team-5669-Techmen/Learn-GitHub)
 
 1. Pull this repository from GitHub into GitHub Desktop
-![Pulling Repository](https://github.com/FRC-Team-5669-Techmen/5669-website/static/github-desktop.png)
+![Pulling Repository](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/github-desktop.png)
 
 2. Open the repository in VSCode. It should look something like the following when complete:
-![vscode](https://github.com/FRC-Team-5669-Techmen/5669-website/static/vscode.png)
+![vscode](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/vscode.png)
 
 3. Open VSCode's terminal:
-![terminal](https://github.com/FRC-Team-5669-Techmen/5669-website/static/terminal.png)
+![terminal](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/terminal.png)
 
 4. In the terminal, run the following command:
 ```bash
@@ -31,17 +31,17 @@ This repository will not teach you GitHub. For a decent tutorial, see the follow
 npm install
 ```
 
-5. Lastly, you need to add an environment variable that connects the website to the content backend. To do this, have your software officer give you the login information for [Hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/HOSTING.md) 
+5. Lastly, you need to add an environment variable that connects the website to the content backend. To do this, have your software officer give you the login information for [Hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/blob/main/HOSTING.md) 
     1. Once logged in to Hygraph, open the `Website` project and navigate to the settings page.
-![website-hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/static/hygraph-website-page.png)
-![settings](https://github.com/FRC-Team-5669-Techmen/5669-website/static/settings.png)
+![website-hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/hygraph-website-page.png)
+![settings](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/settings.png)
     2. Navigate to the `Endpoints` page under `ACCESS`
-![endpoints](https://github.com/FRC-Team-5669-Techmen/5669-website/static/endpoints.png)
+![endpoints](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/endpoints.png)
     3. Copy the URL under `High Performance Content API`
-![url](https://github.com/FRC-Team-5669-Techmen/5669-website/static/api-url.png)
+![url](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/api-url.png)
 
 6. Once you have that URL copied, create a `.env` file in the root of your project. It should look like this once completed:
-![env](https://github.com/FRC-Team-5669-Techmen/5669-website/static/env.png)
+![env](https://github.com/FRC-Team-5669-Techmen/5669-website/tree/main/static/env.png)
 
 7. Place the following into the file and save:
 ```js
@@ -55,7 +55,7 @@ npm run dev
 ```
 
 ## Deployments
-All of our deployments are handled by [Vercel](https://github.com/FRC-Team-5669-Techmen/5669-website/HOSTING.md).
+All of our deployments are handled by [Vercel](https://github.com/FRC-Team-5669-Techmen/5669-website/blob/main/HOSTING.md).
 To update the live website, simply push a commit to the repository, and assuming everything builds correctly, it will be propagated globally within minutes.
 
 Happy coding!
