@@ -67,6 +67,9 @@ npm run dev
 
 ## Deployments
 All of our deployments are handled by [Vercel](https://github.com/FRC-Team-5669-Techmen/5669-website/blob/main/HOSTING.md).
-To update the live website, simply push a commit to the repository, and assuming everything builds correctly, it will be propagated globally within minutes.
+
+Due to limitations with how Vercel manages organizations on GitHub, the website is NOT connected to this repository, but instead a fork of this repository on the `frcteam5669-owner` account, which can be found here: [5669-website](https://github.com/frcteam5669-owner/5669-website)
+
+To deploy the website, first commit your changes to this repository (found in the github organization). Then, have your software officer give you the login information to the owner account, and create a pull request for the changes in this repository to bring them over to that account. Once that is completed, Vercel will automatically deploy the website. 
 
 Happy coding!
