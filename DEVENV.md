@@ -35,14 +35,17 @@ npm install
 ```
 
 5. Lastly, you need to add an environment variable that connects the website to the content backend. To do this, have your software officer give you the login information for [Hygraph](https://github.com/FRC-Team-5669-Techmen/5669-website/blob/main/HOSTING.md) 
+    
     1. Once logged in to Hygraph, open the `Website` project and navigate to the settings page.
 
 ![website-hygraph](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/hygraph-website-page.png)
 
 ![settings](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/settings.png)
+    
     2. Navigate to the `Endpoints` page under `ACCESS`
 
 ![endpoints](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/endpoints.png)
+    
     3. Copy the URL under `High Performance Content API`
 
 ![url](https://raw.githubusercontent.com/FRC-Team-5669-Techmen/5669-website/main/static/api-url.png)
