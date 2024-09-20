@@ -23,7 +23,7 @@
 {#key url}
 	{#each navigations as nav}
 		{#if nav.slug == "about"}
-			<SvelteMarkdown source={nav.page.content.markdown} renderers={{listitem: MemberList, list:List}}/>
+			<SvelteMarkdown source={nav.page.content.markdown} renderers={{orderedlistitem: MemberList, list:List}}/>
 		{/if}
 	{/each}
 {/key}
