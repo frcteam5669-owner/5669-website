@@ -39,3 +39,13 @@ It is now time to manage our content.
 Now that you are on the Content page, we will go in depth on some of the things you may want to do to the website.
 
 ## Modifying Content
+
+### Modifying A Page
+
+### Adding A Page
+
+### Adding A Redirect
+
+### Changing The Home Video
+
+### Adding Pictures
