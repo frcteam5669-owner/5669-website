@@ -8,6 +8,8 @@
         justify-content: center;
         align-items: center;
         flex: 1 1 0px;
+        text-align: center;
+        min-width: 240px;
     }
     li :global(a) {
         color: var(--yellow);
