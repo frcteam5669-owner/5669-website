@@ -12,10 +12,7 @@
   <a href="mailto:frcteam5669@gmail.com">frcteam5669@gmail.com</a>
 </div>
 <p style="margin-bottom: 15px; text-align: center">
-  Have questions? Wan<a
-    class="easteregg"
-    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">'</a
-  >t to learn more about our team? Feel free to contact us here!
+  Have questions? Want to learn more about our team? Feel free to contact us here!
 </p>
 <form
   class="kwes-form"
